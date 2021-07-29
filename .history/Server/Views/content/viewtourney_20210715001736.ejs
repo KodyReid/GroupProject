@@ -1,0 +1,104 @@
+<h1 class="text-center">Tournament Tree</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <table class="table table-bordered">
+                <tr>
+                    <th scope="col">First Round</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td class="table-active"><%= competitor.fullname %></td>
+                    </tr>
+                    <tr>
+                        <td><%= competitor.fullname %></td>
+                    </tr>
+            </table>
+            <table class="table table-bordered">
+                <tr>
+                    <td class="table-active">Team Three</td>
+                </tr>
+                <tr>
+                    <td>Team Four</td>
+                </tr>
+            </table>
+            <table class="table table-bordered">
+                <tr>
+                    <td class="table-active">Team Five</td>
+                </tr>
+                <tr>
+                    <td>Team Six</td>
+                </tr>
+            </table>
+            <table class="table table-bordered">
+                <tr>
+                    <td class="table-active">Team Seven</td>
+                </tr>
+                <tr>
+                    <td>Team Eight</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col align-self-center">
+            <table class="table table-bordered">
+                <tr>
+                    <th scope="col">Second Round</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td class="table-active">Team One</td>
+                    </tr>
+                    <tr>
+                        <td>Team Two</td>
+                    </tr>
+            </table>
+            <table class="table table-bordered">
+
+                <tbody>
+                    <tr>
+                        <td class="table-active">Team One</td>
+                    </tr>
+                    <tr>
+                        <td>Team Two</td>
+                    </tr>
+            </table>
+        </div>
+        <div class="col align-self-center">
+            <table class="table table-bordered">
+                <tr>
+                    <th scope="col">Final Round</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td class="table-active">Team One</td>
+                    </tr>
+                    <tr>
+                        <td>Team Two</td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<table class="table table-striped">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Team Name</th>
+        <th scope="col">Bio</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(let count = 0; count < competitor.length; count++) { %>
+        <tr>
+          <th scope="row"><%= count + 1 %></th>
+          <td><%= competitor[count].fullname %> </td>
+        </tr>
+
+        <% } %>
+
+    </tbody>
+  </table>

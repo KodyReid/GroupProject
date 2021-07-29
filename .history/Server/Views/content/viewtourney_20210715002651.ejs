@@ -1,0 +1,138 @@
+<h1 class="text-center">Tournament Tree</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <table class="table table-striped">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Team Name</th>
+                   
+                  </tr>
+                </thead>
+                <tbody>
+                  <% for(let count = 0; count < 2; count++) { %>
+                    <tr>
+                      <th scope="row"><%= count + 1 %></th>
+                      <td><%= competitor[count].fullname %> </td>
+                    </tr>
+            
+                    <% } %>
+            
+                </tbody>
+              </table>
+              <table class="table table-striped">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Team Name</th>
+                   
+                  </tr>
+                </thead>
+                <tbody>
+                  <% for(let count = 2; count < 4; count++) { %>
+                    <tr>
+                      <th scope="row"><%= count + 1 %></th>
+                      <td><%= competitor[count].fullname %> </td>
+                    </tr>
+            
+                    <% } %>
+            
+                </tbody>
+              </table>
+              <table class="table table-striped">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Team Name</th>
+                   
+                  </tr>
+                </thead>
+                <tbody>
+                  <% for(let count = 4; count < 6; count++) { %>
+                    <tr>
+                      <th scope="row"><%= count + 1 %></th>
+                      <td><%= competitor[count].fullname %> </td>
+                    </tr>
+            
+                    <% } %>
+            
+                </tbody>
+              </table>
+              <table class="table table-striped">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Team Name</th>
+                   
+                  </tr>
+                </thead>
+                <tbody>
+                  <% for(let count = 6; count < 8; count++) { %>
+                    <tr>
+                      <th scope="row"><%= count + 1 %></th>
+                      <td><%= competitor[count].fullname %> </td>
+                    </tr>
+            
+                    <% } %>
+            
+                </tbody>
+              </table>
+        </div>
+        <div class="col align-self-center">
+            <table class="table table-striped">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Team Name</th>
+                   
+                  </tr>
+                </thead>
+                <tbody>
+                  <% for(let count = 0; count < 2; count++) { %>
+                    <tr>
+                      <th scope="row"><%= count + 1 %></th>
+                      <td><%= competitor[count].fullname %> </td>
+                    </tr>
+            
+                    <% } %>
+            
+                </tbody>
+              </table>
+              <table class="table table-striped">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Team Name</th>
+                   
+                  </tr>
+                </thead>
+                <tbody>
+                  <% for(let count = 2; count < 4; count++) { %>
+                    <tr>
+                      <th scope="row"><%= count + 1 %></th>
+                      <td><%= competitor[count].fullname %> </td>
+                    </tr>
+            
+                    <% } %>
+            
+                </tbody>
+              </table>
+        </div>
+        <div class="col align-self-center">
+            <table class="table table-bordered">
+                <tr>
+                    <th scope="col">Final Round</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td class="table-active">Team One</td>
+                    </tr>
+                    <tr>
+                        <td>Team Two</td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+</div>
